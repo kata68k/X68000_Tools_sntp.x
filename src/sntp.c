@@ -276,9 +276,14 @@ int ntp_query(
     wait_ms(1000);
 
     if(check_reply(packet)!=NTP_SUCCESS)
+    {
+        close_s(sock);
         return NTP_ERR_PACKET;
+    }
 
     *unix_time = packet_to_unix(packet);
+
+    close_s(sock);
 
     return NTP_SUCCESS;
 }
