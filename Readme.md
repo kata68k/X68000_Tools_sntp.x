@@ -675,3 +675,11 @@ memcpy(&addr.sin_addr.s_addr, host->h_addr, 4);
 ## Author
 
 X68000 / Human68k / ESP/X 向けの個人開発プロジェクトです。
+
+## 履歴
+
+1.1　2026/11/23  
+     ntp_query() の成功時とパケット異常時にソケットを閉じるようにしました。  
+        renatus-novus-xさん ありがとうございました。  
+1.0　2026/09/12  
+     初回リリース  

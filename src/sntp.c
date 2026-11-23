@@ -294,7 +294,7 @@ main (int argc, char **argv)
     int ret;
     unsigned long t;
 
-    puts("sntp.x ver1.0 for X680x0 by kata68k");
+    puts("sntp.x ver1.1 for X680x0 by kata68k 2026/11/23");
 
     ret = ntp_query("ntp.nict.jp",3000,&t);
     if(ret == NTP_SUCCESS)
